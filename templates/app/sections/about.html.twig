@@ -1,0 +1,15 @@
+<section class="content" id="about">
+
+    <p class="about">{{ profile.about }}</p>
+    <p class="about mb-3">A cela s'allie, mon amour pour les mots et leur agencement. J'aime prendre du recul sur une situation donnée, la clarifier avec des mots simples et des phrases accessibles. </p>
+
+    <hr>
+
+    <h5>Aptitudes</h5>
+    <div class="container">
+        {% for softskill in profile.softSkills %}
+            <p class="soft-skills">{{ softskill.title }}</p>
+        {% endfor %}
+    </div>
+
+</section>

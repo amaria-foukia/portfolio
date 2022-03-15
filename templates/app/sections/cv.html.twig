@@ -1,0 +1,69 @@
+<section class="content" id="cv">
+    <div class="d-print-none">
+        <div class="d-flex justify-content-end"><a href="javascript: void(0);" onclick="window.print();"><i class="fas fa-print"></i> Version PDF ou Impression de mon CV !</a></div>
+    </div>
+
+    <h3>Compétences web</h3>
+    <hr>
+    <ul id="col">
+
+        {% for skill in profile.skills %}
+
+            <li class="">{{ skill.title }}</li>
+
+        {% endfor %}
+
+    </ul>
+
+    <h3>Expériences</h3>
+    <hr>
+
+    {% for experience in profile.experiences %}
+        <div class="row">
+            <div class="col-md-4">
+                <div class="mb-3 badge bg-warning text-white"><i class="fas fa-calendar-alt text-white"></i>&nbsp; {{ experience.formattedDate }}</div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="d-flex justify-content-between">
+                    <strong><p>{{ experience.title }}</p></strong>
+                    {% if experience.company %}
+                        <p class=""><i class="fas fa-building pink-color small"></i><a href="https://www.ifs73.fr/">{{ experience.company }}</a> <p class="city small"> - &nbsp; {{ experience.city }}</p> </p>
+                    {% endif %}
+                    {% if experience.url %}
+                        <a class="blue-color" href="{{ experience.url }}"> <i class="fas fa-link"></i> {{ experience.urlLabel }}</a>
+                    {% endif %}
+                    {% if experience.github %}
+                        <a class="blue-color" href="{{ experience.github }}"><i class="fab fa-github-alt"></i> {{ experience.githubLabel }}</a>
+                    {% endif %}
+                </div>
+                <p>{{ experience.description|raw }}</p>
+
+            </div>
+        </div>
+    {% endfor %}
+
+    <h3>Formations</h3>
+    <hr>
+
+    {% for education in profile.educations %}
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="mb-3 badge bg-warning text-white"><i class="fas fa-calendar-alt text-white"></i>&nbsp;{{ education.formattedDate }}</div>
+            </div>
+
+            <div class="col-md-8 d-flex justify-content-start">
+
+                <strong><p class="">{{ education.title }}</p></strong>
+                <p>  </p>
+                <p class="mx-4"><i class="fas fa-school small"></i> {{ education.school }}
+
+                <p class="city small"> - &nbsp {{ education.city }}</p>
+
+            </div>
+        </div>
+
+    {% endfor %}
+
+</section>

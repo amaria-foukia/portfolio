@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+    color: #555555;
+    /*border: 1px solid darkred;*/
+}
+
+body{
+    background-color: #f5f5ef !important;
+}
+
+section {
+    background-color: white;
+    width: 80%;
+}
+
+h1 {
+    color: #ffafa5;
+    text-decoration-color: #555555 !important;
+    cursor: pointer;
+}
+
+h3, h4 {
+    color: #6bcfd4 !important;
+}
+
+h5 {
+    text-align: left;
+    color: #ee8888;
+    margin: 1rem !important;
+    margin-left: 0rem !important;
+}
+
+p {
+margin-bottom: 0.5rem !important;
+}
+
+a {
+    color: #ee8888 !important;
+    text-decoration: none !important;
+    background: linear-gradient(to top, #ee8888 0%, #ee8888 10%, transparent 10%) no-repeat left bottom / 0 100%;
+    transition: background-size 0.5s;
+}
+
+a:hover {
+    background-size: 100% 100%;
+}
+
+hr {
+    color: #555555 !important;
+}
+
+li{
+    font-size: small;
+}
+
+.content {
+    padding: 2rem;
+    margin: auto auto 1rem;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 25%), 0 6px 20px 0 rgb(0 0 0 / 25%);
+    border: 1px solid #fff;
+}
+
+.container {
+    padding: 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pink-color {
+    color: #ee8888;
+}
+
+.light-pink-color{
+    color: #ffafa5;
+}
+
+.blue-color{
+    color: #6bcfd4 !important;
+}
+
+span.btn-success {
+    background-color: #6bcfd4 !important;
+    border: #6bcfd4 !important;
+    float: right;
+}
+
+div.badge.bg-warning {
+    background-color: #ffafa5 !important;
+    border: #ffafa5 !important;
+    font-weight: normal;
+}
+
+p.about, p.city, p.soft-skills, h2 {
+    font-family: 'PT Serif', serif;
+    font-size: 1rem;
+}
+
+h2.label-cv {
+    text-decoration: overline 1px;
+    text-decoration-color: #f1d1c7 !important;
+    cursor: pointer;
+}
+
+h2.label-cv:hover {
+    text-decoration: overline 1px;
+    text-decoration-color: #6bcfd4 !important;
+}
+
+#col {
+    column-count: 3;
+    margin-left: 33%;
+}
+
+.card-identity {
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 15%), 0 6px 10px 0 rgb(0 0 0 / 15%);
+    max-width: 20rem;
+}
+
+.card-body-identity {
+    border: 1px dashed #6bcfd4 !important;
+    margin: 7px !important;
+}
+
+.card-realisations {
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 15%), 0 6px 10px 0 rgb(0 0 0 / 15%);
+    max-width: 20rem;
+    cursor: pointer;
+}
+
+.fa-link, .fa-location-pin, .fa-github-alt {
+    color: #6bcfd4;
+    font-size: smaller;
+}
+
+.fa-toggle-on {
+    color: lightyellow;
+    font-size: larger;
+}
+
+.social-icon {
+    font-size: larger;
+}

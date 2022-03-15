@@ -1,0 +1,33 @@
+<section class="content" id="realisations">
+
+    <h3 class="text-center">Mes réalisations</h3>
+
+    <hr>
+
+    <h5 class="subtitle"> Développement web </h5>
+
+    <div class="container">
+        {% for realisation in profile.realisations %}
+                <div class="card card-realisations my-2">
+                    <div class="card-body">
+                        <h4 class="card-title">{{ realisation.title }}</h4>
+                        <h6 class="card-subtitle my-2 text-muted fw-bolder">{{ realisation.technology }}</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="{{ realisation.url }}" class="card-link"><i class="fas fa-link"></i></a>
+                        <a href="{{ realisation.github }}" class="card-link"><i class="fab fa-github-alt"></i></a>
+                    </div>
+                </div>
+        {% endfor %}
+    </div>
+
+    <hr>
+    <h5 class="subtitle"> Rédaction </h5>
+
+    <p>A Compléter ... </p>
+
+    <hr>
+    <h5 class="subtitle"> Analyses de données </h5>
+
+    <p>A Compléter ... </p>
+
+</section>

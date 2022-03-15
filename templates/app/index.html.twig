@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Portfolio{% endblock %}
+
+{% block body %}
+
+    <div itemscope itemtype="http://schema.org/Person">
+
+        {% include 'app/sections/header.html.twig' %}
+
+        {% include 'app/sections/about.html.twig' %}
+
+        {% include 'app/sections/cv.html.twig' %}
+
+        {% include 'app/sections/realisations.html.twig' %}
+
+    </div>
+
+{% endblock %}
